@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>formulario de HTML</title>
+    <style type="text/css" media="screen">
+      input {
+      width : 50%;
+      margin : 10px;
+      background-color : #1a1a1a;
+      color : green;
+      }
+      body {
+      padding : 50px;
+      font-family : sans;
+      color : #ffffff;
+      background-color : black;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <h1>Creando un nuevo item...</h1>
+    <form method="post" id="el-formulario" action="php3.php" role="form"> 
+      <div class="form-group">
+        <label for="Nombre"> Nombre </label>
+        <input type="text" class="form-control" name="nombre"
+               placeholder="nombre del item" /> <br />
+
+        <label for="valor_venta"> Valor de venta (oro) </label>
+        <input type="text" class="form-control" name="valor_venta"
+               placeholder="Cuánto oro consigue el jugador al vender éste ítem?" /> <br />
+
+        <label for="valor_compra"> Valor de compra (oro) </label>
+        <input type="text" class="form-control" name="valor_compra"
+               placeholder="Cuánto oro gasta el jugador al comprar éste ítem?" /> <br />
+
+        <button type="submit" class="btn btn-primary" action="submit"> Agregar! </button> 
+
+      </div>
+    </form>
+
+  </body>
+</html>
